@@ -1,0 +1,66 @@
+﻿@model EDrinkShop.ApplicationCore.Entities.CalalogItem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CalalogItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShortDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LongDescripptiom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LongDescripptiom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PictureUri)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PictureUri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PictureThumbnailUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PictureThumbnailUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CatalogType.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogBrand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CatalogBrand.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
